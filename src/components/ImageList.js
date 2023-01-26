@@ -1,4 +1,5 @@
 import React from 'react';
+import './ImageList.css';
 import ImageShow from './ImageShow';
 
 const ImageList = ({ images }) => {
@@ -6,7 +7,7 @@ const ImageList = ({ images }) => {
         return <ImageShow key={image.id} image={image}></ImageShow>
     })
     return (
-        <div>
+        <div className='image-list'>
             {renderedImages}
         </div>
     );
